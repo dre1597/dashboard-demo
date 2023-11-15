@@ -1,4 +1,4 @@
-import AuthForm from '@/pages/auth-form.tsx';
+import AuthForm from '@/pages/auth/auth-form.tsx';
 
 export default function Auth() {
   return (
