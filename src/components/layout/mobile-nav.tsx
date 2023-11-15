@@ -29,6 +29,11 @@ export function MobileNav() {
               Dashboard
             </MobileLink>
           </div>
+          <div>
+            <MobileLink to="/profile" onOpenChange={setOpen}>
+              Profile
+            </MobileLink>
+          </div>
         </ScrollArea>
       </SheetContent>
     </Sheet>
@@ -50,7 +55,7 @@ function MobileLink({ to, onOpenChange, className, children, ...props }: MobileL
         navigate(to);
         onOpenChange?.(false);
       }}
-      className={cn(className)}
+      className={cn('block text-xl py-1.5', className)}
       {...props}
     >
       {children}

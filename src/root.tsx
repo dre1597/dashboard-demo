@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 
 import { AuthPage } from '@/pages/auth';
 import { DashboardPage } from '@/pages/dashboard';
+import { ProfilePage } from '@/pages/profile';
 import Spinner from '@/components/ui/spinner.tsx';
 
 export function Root() {
@@ -17,6 +18,7 @@ export function Root() {
       <Routes>
         <Route path="/auth" element={<AuthPage/>}/>
         <Route path="/dashboard" index element={<DashboardPage/>}/>
+        <Route path="/profile" element={<ProfilePage/>}/>
       </Routes>
     </Suspense>
   );
